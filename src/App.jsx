@@ -1,12 +1,10 @@
 import "./App.css";
-import Navbar from "./layout/Layout";
-
+import Layout from "./layout/Layout";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <p>aaaaaaa</p>
+      <Layout />
     </>
   );
 }

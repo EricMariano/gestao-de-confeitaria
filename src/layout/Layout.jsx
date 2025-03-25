@@ -1,17 +1,14 @@
-import logoapp from "../assets/logoapp.png";
-import Avatar from "../components/Avatar";
+// import logoapp from "../assets/logoapp.png";
 import Drawer from "../components/Drawer";
+import Navbar from "../components/Navbar";
 
-function Navbar() {
+function Layout() {
   return (
-    <div className="navbar bg-white">
+    <>
       <Drawer />
-      <div className="flex-1">
-        <img src={logoapp} alt="logoapp" className="w-75 h-7.5 ml-2" />
-      </div>
-      <Avatar />
-    </div>
+      <Navbar />
+    </>
   );
 }
 
-export default Navbar;
+export default Layout;
