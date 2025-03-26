@@ -1,25 +1,39 @@
 @import "tailwindcss";
-@plugin "daisyui"{
-}
+
+@plugin "daisyui" {}
 
 @theme {
-    --color-primary-site: #F17E92;
-    --color-secondary-site: #e3a7af;
-  }
-  
-  /* Variáveis para o tema Light */
-  :root {
-    --bg-color: #fff;
-    background: var(--bg-color);
-  }
-  
-  /* Variáveis para o tema Dark */
-  html.dark {
-    --bg-color: #333;
-    --text-color: #fff;
-  }
-  
-  body {
-    background: var(--bg-color);
-    color: var(--text-color);
-  }
+  --color-primary-default: #F17E92;
+  --color-secondary-default: #e3a7af;
+}
+
+/* Variáveis para o tema Light */
+:root {
+  --bg-color: #fff;
+  --color-primary-site: #fff;
+  --color-secondary-site: #e3a7af;
+  --hover-bg-color: #ffe3e9;
+  --border-color: #F17E92;
+  --color-svg-site: #F17E92;
+  --color-btnbg-site: #fff;
+  --color-btnborder-site: #F17E92;
+  --color-borderdrawer-site: #F17E92;
+  --color-text-site: #F17E92;
+  background: var(--bg-color);
+}
+
+/* Variáveis para o tema Dark */
+html.dark {
+  --bg-color: #333;
+  --color-primary-site: #C95F73;
+  --color-secondary-site: #e3a7af;
+  --hover-bg-color: #e3a7af;
+  --color-svg-site: #fff;
+  --color-btnbg-site: #e3a7af;
+  --color-text-site: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}

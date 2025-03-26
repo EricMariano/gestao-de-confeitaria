@@ -26,7 +26,7 @@ export default function ThemeToggle() {
         <input type="checkbox" checked={isDark} onChange={toggleTheme} />
         {/* sun icon */}
         <svg
-          className="swap-on h-5 w-5 bg-none fill-primary-site"
+          className="swap-on h-5 w-5 bg-none fill-primary-default"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -34,7 +34,7 @@ export default function ThemeToggle() {
         </svg>
         {/* moon icon */}
         <svg
-          className="swap-off h-5 w-5 bg-none fill-primary-site"
+          className="swap-off h-5 w-5 bg-none fill-primary-default"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

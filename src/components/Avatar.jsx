@@ -9,11 +9,11 @@ export default function Avatar() {
       <div className="dropdown dropdown-end relative">
         <input type="checkbox" checked={isOpen} readOnly hidden />
         <div
-          className=" btn btn-ghost btn-circle bg-primary-site border-none mr-4 w-8.5 h-8.5"
+          className=" btn btn-ghost btn-circle bg-primary-default border-none mr-4 w-8.5 h-8.5"
           onClick={() => setIsOpen(!isOpen)}
           tabIndex={0}
         >
-          <span className="text-xs">JM</span>
+          <span className="text-xs text-white ">JM</span>
         </div>
 
         <AvatarMenu />

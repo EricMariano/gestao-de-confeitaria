@@ -1,14 +1,25 @@
-// import logoapp from "../assets/logoapp.png";
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Drawer from "../components/Drawer";
 import Navbar from "../components/Navbar";
 
-function Layout() {
+export default function Layout() {
+  const [drawerWidth, setDrawerWidth] = useState(250); // Largura inicial do Drawer
+
   return (
-    <>
-      <Drawer />
-      <Navbar />
-    </>
+    <div className="flex">
+      {/* Drawer ocupa uma largura fixa */}
+      <Drawer onToggle={setDrawerWidth} />
+      {/* Conteúdo principal deslocado dinamicamente */}
+      <div
+        className="flex-1 transition-all duration-200"
+        style={{ marginLeft: `${drawerWidth}px` }}
+      >
+        <Navbar />
+        <main className="p-4">
+          <Outlet />
+        </main>
+      </div>
+    </div>
   );
 }
-
-export default Layout;
