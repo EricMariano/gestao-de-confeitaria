@@ -8,9 +8,6 @@ CRM Confeitaria é uma aplicação web dedicada à gestão de confeitaria, permi
 - [Recursos](#recursos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação e Execução](#instalação-e-execução)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Como Contribuir](#como-contribuir)
-- [Licença](#licença)
 
 ## Visão Geral
 
@@ -51,8 +48,8 @@ A aplicação utiliza React para a interface do usuário, Recharts para a visual
 2. **Instale as dependências**
     ```bash
     npm install
-# ou, se estiver utilizando Yarn:
-# yarn install
+   ou, se estiver utilizando Yarn:
+   yarn install
 3. **Inicie o servidor de desenvolvimento**
     ```bash
     npm run dev
