@@ -16,7 +16,7 @@ export default function Layout() {
         style={{ marginLeft: `${drawerWidth}px` }}
       >
         <Navbar />
-        <main className="p-4">
+        <main className="ml-8 mr-4">
           <Outlet />
         </main>
       </div>

@@ -17,7 +17,7 @@ export default function Drawer({ onToggle }) {
     <>
       <div className="relative">
         <div
-          className={`fixed top-0 left-0 h-full bg-[var(--color-primary-site)] border-r border-[var(--color-borderdrawer-site)] shadow-lg z-20 transition-all duration-200 ease-in-out ${
+          className={`fixed top-0 left-0 h-full bg-[var(--color-primary-site)] border-r border-[var(--color-borderdrawer-site)] shadow-lg z-20 transition-all duration-40 ease-in-out ${
             isExpanded ? "w-[250px]" : "w-[80px]"
           }`}
         >
@@ -34,59 +34,79 @@ export default function Drawer({ onToggle }) {
               </div>
             </button>
           </div>
-
           <LogoComponent />
-
           {/* Drawer */}
           <div className="p-4">
             <ul className="space-y-2">
-              <li className="transition-all duration-200 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
+
+              <li className="transition-all duration-500 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
                 <Link
                   to="/"
                   className="rounded text-[var(--color-text-site)] flex items-center p-2"
                 >
                   <DashboardIconButton />
 
-                  {isExpanded && (
-                    <span className="font-semibold">Dashboard</span>
-                  )}
+                  <span
+                    className={`font-semibold transition-opacity duration-300 ease-in-out ${
+                      isExpanded ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    Dashboard
+                  </span>
                 </Link>
               </li>
-              <li className="transition-all duration-200 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
+
+              <li className="transition-all duration-300 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
                 <Link
                   to="/orders"
                   className="rounded text-[var(--color-text-site)] flex items-center p-2"
                 >
                   <OrderIconButton />
 
-                  {isExpanded && <span className="font-semibold">Pedidos</span>}
+                  <span
+                    className={`font-semibold transition-opacity duration-300 ease-in-out ${
+                      isExpanded ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    Pedidos
+                  </span>
                 </Link>
               </li>
 
-              <li className="transition-all duration-200 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
+              <li className="transition-all duration-300 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
                 <Link
                   to="/ingredients"
                   className="rounded text-[var(--color-text-site)] flex items-center p-2"
                 >
                   <IngredientsIconButton />
 
-                  {isExpanded && (
-                    <span className="font-semibold">Ingredientes</span>
-                  )}
+                  <span
+                    className={`font-semibold transition-opacity duration-300 ease-in-out ${
+                      isExpanded ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    Ingredientes
+                  </span>
                 </Link>
               </li>
-              <li className="transition-all duration-200 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md ">
+
+              <li className="transition-all duration-300 ease-in-out hover:bg-[var(--hover-bg-color)] hover:shadow-lg rounded-md">
                 <Link
                   to="/Recipes"
                   className="rounded text-[var(--color-text-site)] flex items-center p-2"
                 >
                   <RecipesIconButton />
 
-                  {isExpanded && (
-                    <span className="font-semibold">Receitas</span>
-                  )}
+                  <span
+                  className={`font-semibold transition-opacity duration-300 ease-in-out ${
+                      isExpanded ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    Receitas
+                  </span>
                 </Link>
               </li>
+              
             </ul>
           </div>
         </div>
